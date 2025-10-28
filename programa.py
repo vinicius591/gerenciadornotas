@@ -30,8 +30,9 @@ while True:
                 print(f"\nNome: {aluno['nome']}")
                 print(f"\nNotas: {aluno['notas']}")
                 print(f"\nMédia: {aluno['media']:.2f}")
-                print(f"\nSituação: {aluno['situacao']}")
+                print(f"Situação: {aluno['situacao']}")
     elif no == 0:
         print("\nPrograma finalizado")
         break
-            
+    else:
+        print("\nOpção inválida, tente novamente!")
