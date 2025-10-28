@@ -1,7 +1,13 @@
-def calcular_media(numero):
-    if len(numero) == 0:
-        return 0
-    media = sum(numero) / len(numero)
+
+def calcular_media(listaNotas):
+    media = sum(listaNotas) / len(listaNotas)
     return media
-valores = input("Digite suas notas")
-valores = [float(n) for n in valores.split ()]
+
+def situacao(media):
+    if media >= 7:
+        return "Aprovado"
+    elif media < 7 and media >= 5:
+        return "Recuperação"
+    else:
+        return "Reprovado"
+
